@@ -1,4 +1,3 @@
-"use strict";
 /*
 <<<< Task No: 10 >>>>
 Adding Comments: Choose two of the programs you’ve written,
@@ -7,7 +6,6 @@ specific to write because your programs are too simple at this point,
 just add your name and the current date at the top of each program file.
 Then write one sentence describing what the program does.
 */
-Object.defineProperty(exports, "__esModule", { value: true });
 // Stored Name 
 let myName = 'Muhammad Nuaman';
 // Date: tue 12/march/2024
@@ -21,3 +19,4 @@ console.log(`
 My name is ${myName} and I'm learning typescript.
 and doing task no 10 that name is adding commments on ${date}
 `);
+export {};
