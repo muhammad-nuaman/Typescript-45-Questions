@@ -8,6 +8,7 @@ print a message to them. The text of each message should be the same, but each m
 const friends: string[] = ['Kashif', 'Husnain', 'Zeeshan', 'Bilal'];
 
 for (let friend of friends) {
-    console.log(`"Hey ${friend}, hope you're having an amazing day!"`)
+    console.log(`"Hi ${friend}, hope you're having an amazing day!"`)
 }
+
 

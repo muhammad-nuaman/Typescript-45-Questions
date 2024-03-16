@@ -10,5 +10,5 @@ const names: string[] = ['Kashif', 'Husnain', 'Zeeshan', 'Bilal'];
 
 // Print Names into Group
 console.group('Friends Name: ');
-names.forEach((e, i) => console.log(`${(++i)}: ${e}`));
+names.forEach((name, index) => console.log(`${(++index)}: ${name}`));
 console.groupEnd();
