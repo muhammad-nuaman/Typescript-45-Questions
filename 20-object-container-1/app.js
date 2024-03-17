@@ -11,7 +11,7 @@ const lister = (...list) => list;
 const mountains = lister('k2', 'Mount Everest');
 // cities list
 const cities = lister('Karachi', 'Lahore');
-// Print Program
+// Print Lists
 console.table(mountains);
 console.table(cities);
 export {};

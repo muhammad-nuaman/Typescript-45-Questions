@@ -10,11 +10,11 @@ Write a program that creates a list containing these items.
 const lister = (...list: string[]) => list;    
 
 // mountains list
-const mountains: string[] = lister('k2', 'Mount Everest');
+const mountains = lister('k2', 'Mount Everest');
 
 // cities list
-const cities: string[] = lister('Karachi', 'Lahore');
+const cities = lister('Karachi', 'Lahore');
 
-// Print Program
+// Print Lists
 console.table(mountains);
 console.table(cities);
