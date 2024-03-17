@@ -9,7 +9,7 @@ Print your message.
 let famous_person = 'Muhammad Ali Jinnah';
 // person quote
 let quote = 'Think 100 times before you take a decision, But once that decision is taken, stand by it as one man';
-// message with person and and his quote
+// message with person name and person quote
 let message = `${famous_person} once said, "${quote}"`;
 // print message
 console.log(message);
