@@ -9,7 +9,7 @@ before closing the program.
 */
 // A Grocery List
 let grocery = ["Rice", "Butter", "Chicken"];
-// Intentational Error
+// Through error
 // console.log(grocery['Rice']); 
 // Indexing
 console.log(grocery[0]);

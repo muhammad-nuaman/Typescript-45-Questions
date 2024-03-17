@@ -11,7 +11,7 @@ before closing the program.
 // A Grocery List
 let grocery: string[] = ["Rice", "Butter", "Chicken"];
 
-// Intentational Error
+// Through error
 // console.log(grocery['Rice']); 
 
 // Indexing
