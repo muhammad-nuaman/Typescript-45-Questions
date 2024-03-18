@@ -7,7 +7,9 @@ each of the following:
 */
 
 
-// User Interfaces
+//======================================
+// Interfaces
+//======================================
 interface person {
     name: string;
     age: number;
@@ -18,14 +20,27 @@ interface person {
     university: 'Hardvard' | 'Cambridge',
     wantSettledForeign: boolean;
 }
+interface university {
+    name: string;
+    admissionOpen: boolean,
+    ageRequired: {
+        min: number,
+        max: number
+    }
+}
+//======================================
+
+//======================================
+// Person
+//======================================
 const person: person = {
     name: 'Ali',
-    age: 22,
+    age: 32,
     marriedStatus: false,
     jobStatus: true,
     country: 'Pakistan',
     takeAdmision: true,
-    university: "Hardvard",
+    university: 'Cambridge',
     wantSettledForeign: true,
 }
 
@@ -44,8 +59,68 @@ console.log(`He's living in Pakistan`, ('Pakistan' === person.country));
 // Admision?
 console.log(`He's want to take admision?`, (true === person.takeAdmision));
 // University?
-console.log(`He's want to take admision in Hardvard University?`, ('Hardvard' === person.university));
+if (person.takeAdmision) {
+        console.log(`Which University he's want to take admision?`, person.university);
+}
 // Foreign
 console.log(`He's want to Settled in foreign?`, (true === person.wantSettledForeign));
 
+// spaces
+console.log('\n');
 
+
+
+//======================================
+// Universities
+//======================================
+const university1: university = {
+    name: 'Hardvard',
+    admissionOpen:  true,
+    ageRequired: {
+        min: 18,
+        max: 32
+    }
+}
+const university2: university = {
+    name: 'Cambridge',
+    admissionOpen: true,
+    ageRequired: {
+        min: 18,
+        max: 36
+    }
+}
+
+if (person.takeAdmision) {
+    // Hardvard University
+    if (person.university === 'Hardvard') {
+        // Admision Open
+        if (university1.admissionOpen) {
+            console.log('Hardvard admisions are open');            
+            // Age Required
+            if ( 
+                person.age >= university1.ageRequired.min &&   
+                person.age <= university1.ageRequired.max   
+                ) 
+            {console.log('Your are Illegible')} //illegible
+            else {console.log('Your are not Illegible')} // not illegible
+            }
+        // Admision not Open
+        else {console.log('Hardvard admisions are not open')}
+    }
+    
+    // Cambridge University
+    else if (person.university === 'Cambridge') {
+        if (university2.admissionOpen) {
+            console.log('Cambridge admisions are open');
+            // Age Required
+            if ( 
+                person.age >= university2.ageRequired.min &&   
+                person.age <= university2.ageRequired.max   
+                ) 
+            {console.log('Your are Illegible')} // illegible
+            else {console.log('Your are not Illegible')} // not illegible            
+        }
+        // Admision not Open
+        else {console.log('Cambridge admisions are not open')}
+    }
+}
