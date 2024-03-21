@@ -7,20 +7,20 @@ Loop through the array, and print a greeting to each user:
 */
 const status = () => [false, true][Math.floor(Math.random() * 2)];
 const users = [
-    { username: "admin", isLogin: status() },
-    { username: "Ali Khan", isLogin: status() },
-    { username: "Fatima Ahmed", isLogin: status() },
-    { username: "Muhammad Hassan", isLogin: status() },
-    { username: "Aisha Malik", isLogin: status() },
-    { username: "Ibrahim Ahmed", isLogin: status() },
+    { name: "admin", isLogin: status() },
+    { name: "Ali Khan", isLogin: status() },
+    { name: "Fatima Ahmed", isLogin: status() },
+    { name: "Muhammad Hassan", isLogin: status() },
+    { name: "Aisha Malik", isLogin: status() },
+    { name: "Ibrahim Ahmed", isLogin: status() },
 ];
 users.forEach((user) => {
     if (user.isLogin) {
-        if (user.username.includes('admin')) {
+        if (user.name.includes('admin')) {
             console.log(`Hi admin, would you like to see a status report?`);
         }
         else {
-            console.log(`Hi ${user.username}, thank you for logging in again.`);
+            console.log(`Hi ${user.name}, thank you for logging in again.`);
         }
     }
 });
@@ -44,6 +44,6 @@ if (loginUsers.length) {
     }
 }
 else {
-    console.log(`\nNo users: We are finding some users!`);
+    console.log(`\nNo User: We are finding some users!`);
 }
 export {};
