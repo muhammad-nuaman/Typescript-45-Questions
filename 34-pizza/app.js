@@ -1,5 +1,5 @@
 /*
-<<<< Task No: 33 >>>>
+<<<< Task No: 34 >>>>
 Pizzas:
 Think of at least three kinds of your favorite pizza.
 Store these pizza names in a array, and then use a for loop to
@@ -19,9 +19,11 @@ const opinions = [
     'pizza is a great choice for me as I enjoy the variety of colorful vegetables and flavors it offers.',
     'pizza is a unique blend of sweet and savory with the combination of pineapple and ham, which I find quite delicious.'
 ];
-// Print Opinions
-// for (let i = 0; i < pizzas.length; i++) console.log(`${pizzas[i]} ${opinions[i]} \n`);
-pizzas.forEach(pizza => opinions.forEach(opinion => console.log(`${pizzas} ${opinion}\n`)));
+// Print Opinions (First Way)
+for (let i = 0; i < pizzas.length; i++)
+    console.log(`${pizzas[i]} ${opinions[i]} \n`);
+// Print Opinions 2 (Second Way)
+// pizzas.forEach(pizza => opinions.forEach(opinion => console.log(`${pizzas} ${opinion}\n`)));
 // Print simple statement
 console.log('"I really like pizza!"');
 export {};
