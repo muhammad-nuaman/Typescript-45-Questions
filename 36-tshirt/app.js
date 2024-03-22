@@ -1,6 +1,5 @@
 /*
 <<<<< Task No 36 >>>>>>
-<<<<< Task No 37 >>>>>>
 
 T-Shirt:
 Write a function called make_shirt()
@@ -9,13 +8,16 @@ printed on the shirt.
 The function should print a sentence summarizing the size of
 the shirt and the message printed on it. Call the function.
 
+<<<<< Task No 37 >>>>>>
 Large Shirts:
 Modify the make_shirt() function so that shirts are large by default with
 a message that reads I love TypeScript. Make a large shirt and a medium
 shirt with the default message, and a shirt of any size with a different message.
 */
 // Make Shirts
-function make_shirt(size = 'Large', color = 'White', design = 'Typography', message = 'I love Typescript') {
+function make_shirt(
+// shirt default configuration
+size = 'Large', color = 'White', design = 'Typography', message = 'I love Typescript') {
     if (design.includes('Sublimation')) {
         console.log(`Your Shirt is Ready! \n` +
             `Size: ${size} \n` +

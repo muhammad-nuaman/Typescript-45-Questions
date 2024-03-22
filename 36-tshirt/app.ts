@@ -21,6 +21,7 @@ type designs = 'Sublimation' | 'Embroidery' | 'Typography';
 
 // Make Shirts
 function make_shirt(
+    // shirt default configuration
     size: sizes = 'Large', 
     color: colors = 'White', 
     design: designs = 'Typography',
