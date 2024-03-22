@@ -1,6 +1,5 @@
 /*
 <<<<< Task No 36 >>>>>>
-<<<<< Task No 37 >>>>>>
 
 T-Shirt:
 Write a function called make_shirt() 
@@ -9,6 +8,7 @@ printed on the shirt.
 The function should print a sentence summarizing the size of 
 the shirt and the message printed on it. Call the function.
 
+<<<<< Task No 37 >>>>>>
 Large Shirts: 
 Modify the make_shirt() function so that shirts are large by default with 
 a message that reads I love TypeScript. Make a large shirt and a medium
