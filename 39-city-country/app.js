@@ -7,7 +7,7 @@ and its country. The function should return a string formatted like this:
 "Lahore, Pakistan"
 */
 //  City and Country
-const city_country = (...city_country) => city_country.toString();
+const city_country = (city, country) => `${city}, ${country}`;
 // Print
 console.log(city_country('karachi', 'Pakistan'));
 console.log(city_country('Lahore', 'Pakistan'));
