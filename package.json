@@ -2,7 +2,7 @@
   "name": "typescript-45-questions",
   "version": "1.0.0",
   "description": "This repo has 45 fun and challenging questions that cover different parts of TypeScript.",
-  "main": "module.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

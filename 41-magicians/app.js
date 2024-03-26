@@ -6,7 +6,6 @@ Pass the array to a function called show_magicians(),
 which prints the name of each magician in the array.
 */
 // Magicians Names
-// import {magicians} from '../'
 const magicians = [
     "Albus Dumbledore",
     "Harry Potter",

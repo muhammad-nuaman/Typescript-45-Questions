@@ -13,10 +13,11 @@ const magicians: string[] = [
     "Harry Potter", 
     "Ronald Weasley"
 ]
+// Show Magicians
 function show_magicians (magicians: string[]) {
     magicians.forEach(magician => console.log(magician))
 }
-// Make The Great to Magicians
+// Make The Great Magicians
 function make_great(magicians: string[]) {
     magicians.forEach((magician, index, magicians) => {
         magicians[index] = `The Great ${magician}`;

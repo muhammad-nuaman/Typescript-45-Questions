@@ -7,7 +7,6 @@ which prints the name of each magician in the array.
 */
 
 // Magicians Names
-// import {magicians} from '../'
 const magicians: string[] = [
     "Albus Dumbledore", 
     "Harry Potter", 
