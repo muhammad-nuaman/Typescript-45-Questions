@@ -1,19 +1,32 @@
 /*
 <<<<< Task No: 44 >>>>>
-Sandwiches:
-Write a function that accepts a array of items a person wants on a sandwich.
-The function should have one parameter that collects as many items as the
-function call provides, and it should print a summary of the sandwich that is
-being ordered. Call the function three times, using a different number of
-arguments each time.
+Cars:
+Write a function that stores information about a carInfo in a Object.
+The function should always receive a manufacturer and a model name.
+It should then accept an arbitrary number of keyword arguments.
+Call the function with the required information and two other
+name-value pairs, such as a color or an optional feature.
+Print the Object that’s returned to make sure all the information
+was stored correctly.
 */
-// Define Sandwich
-function sandwich(...order) {
-    console.count('\nSandwich Order');
-    order.forEach(item => console.log(`● ${item}`));
+// Car
+function carInfo(manufacturer, modelName, ...moreInfo) {
+    const features = { manufacturer, modelName };
+    moreInfo.forEach((feature, index, morefeatures) => {
+        Object.assign(features, morefeatures[index]);
+    });
+    return features;
 }
-// Sandwich Orders
-sandwich('white bread', 'tomato ketchup', 'cucumber and tomato', 'chicken spread');
-sandwich('brown bread', 'chilli sauce', 'tomato', 'chicken spread');
-sandwich('white bread', 'tomato ketchup', 'cucumber', 'veg spread');
+// Declare car 1
+const car1 = carInfo('nissan', 'altima', { color: 'white' }, { automatic: true });
+// Print
+console.log(car1);
+// Declare Car 2
+const car2 = carInfo('toyota', 'camry', { color: 'red' }, { automatic: true }, { sunroof: true });
+// Print 
+console.log(car2);
+// Declare Car 3
+const car3 = carInfo('tesla', 'model 3', { color: 'gray' }, { AI: true }, { sunroof: true }, { camera: true }, { electrical: true });
+// Print
+console.log(car3);
 export {};
