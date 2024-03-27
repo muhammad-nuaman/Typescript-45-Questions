@@ -19,7 +19,7 @@ type ingredients = [
 // Define Sandwich
 function sandwich(...order: ingredients) {
     console.count('\nSandwich Order');
-    order.forEach((item, index) => console.log(`> ${item}`)
+    order.forEach(item => console.log(`● ${item}`)
     );
 }
 

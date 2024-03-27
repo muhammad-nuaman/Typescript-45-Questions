@@ -10,7 +10,7 @@ arguments each time.
 // Define Sandwich
 function sandwich(...order) {
     console.count('\nSandwich Order');
-    order.forEach((item, index) => console.log(`> ${item}`));
+    order.forEach(item => console.log(`● ${item}`));
 }
 // Sandwich Orders
 sandwich('white bread', 'tomato ketchup', 'cucumber and tomato', 'chicken spread');
