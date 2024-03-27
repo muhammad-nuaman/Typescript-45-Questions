@@ -8,8 +8,22 @@ being ordered. Call the function three times, using a different number of
 arguments each time.
 */
 
-function sandwich(...provides: string[]) {
-    console.table(provides);
+// Define Ingredients
+type ingredients = [
+    'white bread' | 'brown bread',
+    'tomato ketchup' | 'chilli sauce',
+    'cucumber and tomato' | 'cucumber' | 'tomato',
+    'chicken spread' | 'veg spread'
+];
+
+// Define Sandwich
+function sandwich(...order: ingredients) {
+    console.count('\nSandwich Order');
+    order.forEach((item, index) => console.log(`> ${item}`)
+    );
 }
 
-sandwich('white bread', '');
+// Sandwich Orders
+sandwich('white bread', 'tomato ketchup', 'cucumber and tomato', 'chicken spread');
+sandwich('brown bread', 'chilli sauce', 'tomato', 'chicken spread');
+sandwich('white bread', 'tomato ketchup', 'cucumber', 'veg spread');
