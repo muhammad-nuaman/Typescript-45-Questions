@@ -1,16 +1,18 @@
 /*
 <<<< Task No: 5 >>>>
-Famous Quote 2: Repeat Exercise 4, but this time store
+Famous Quote 2:
+Repeat Exercise 4, but this time store
 the famous person’s name in a variable called famous_person.
 Then compose your message and store it in a new variable called message.
 Print your message.
 */
-// person name
+// Declare Person Name
 let famous_person = 'Muhammad Ali Jinnah';
-// person quote
-let quote = 'Think 100 times before you take a decision, But once that decision is taken, stand by it as one man';
-// message with person name and person quote
-let message = `${famous_person} once said, "${quote}"`;
-// print message
+// Declare Person's Quote
+let quote = 'Think 100 times before you take a decision \n' +
+    'But once that decision is taken, stand by it as one man';
+// Declare Message
+let message = `${famous_person} once said,\n "${quote}"`;
+// Print Message
 console.log(message);
 export {};

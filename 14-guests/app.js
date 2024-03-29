@@ -1,11 +1,13 @@
 /*
 <<<< Task No: 14 >>>>
-Guest List: If you could invite anyone, living or deceased,
+Guest List:
+If you could invite anyone, living or deceased,
 to dinner, who would you invite? Make a list that includes at
 least three people you’d like to invite to dinner.
 Then use your list to print a message to each person,
 inviting them to dinner.
  */
+// Declare Guests List
 let guests = [
     'Bill Gates',
     'Mark Zuckerberg',
@@ -53,7 +55,8 @@ guests.forEach(guest => {
 });
 /*
 <<<< Task No: 17 >>>>
-Shrinking Guest List: You just found out that your new dinner
+Shrinking Guest List:
+You just found out that your new dinner
 table won’t arrive in time for the dinner, and you have space for
 only two guests.
 */
