@@ -12,16 +12,20 @@ Then write one sentence describing what the program does.
 let myName: string = 'Muhammad Nuaman'; 
 
 // Today Date: tue 12/march/2024
-let date: string = new Date(2024, 2, 12).toDateString();
+let today: string = new Date(2024, 2, 12).toDateString();
 
 /* 
-Here, I am mentioning my name, 
-subject name and also today date.
+Here, I'm mentioning 
+my name, 
+subject name 
+and also 
+today date.
 */
+
 console.log(`
-My name is ${myName} and I'm learning typescript. 
-entil i've done 9 tasks and now 
-i'm doing task no 10 that name is "adding commments" 
-on today ${date}
+My name is ${myName}, and I'm learning TypeScript. 
+Until now, I've completed 9 tasks, and 
+now I'm doing task number 10, which is called 'adding comments.' 
+And today is ${today}.
 `);
  
