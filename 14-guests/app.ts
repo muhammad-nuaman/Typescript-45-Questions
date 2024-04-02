@@ -9,14 +9,15 @@ inviting them to dinner.
  */
 
 // Declare Guests List
-let guests: string[] = [
+const guests: string[] = [
     'Bill Gates', 
     'Mark Zuckerberg', 
     'Elon Musk', 
     'Steve Jobs'
 ];
 
-console.log("<<<< Invitation For Dinner >>>>\n");
+// Print Invitation
+console.count("<<<< Invitation For Dinner >>>>" + '\n');
 guests.forEach(guest => {
     console.log(`Dear ${guest}, 
     would you like to join me for dinner?\n`)
@@ -30,24 +31,25 @@ You just heard that one of your
 guests can’t make the dinner, so you need to send out a 
 new set of invitations. You’ll have to think of someone 
 else to invite.
- */
+*/
 
+// Message from the Guest
 let guest_message = 
-    `Sorry! Steve Jobs can't accept your invitation because he's no more`;
+`Sorry! Steve Jobs can't accept your invitation because he's no more`;
 
-
-guests.forEach(guest => {
+// Add New Guest
+guests.forEach((guest, index) => {
     if (guest_message.includes(guest)) {
-        guests[guests.indexOf(guest)] = 'Sam Altman';
+        guests[index] = 'Sam Altman';
     }
 });
 
-console.log('<<<< Second Invitation >>>>\n');
+// Print Invitation
+console.count("<<<< Invitation For Dinner >>>>" + '\n');
 guests.forEach(guest => {
     console.log(`Dear ${guest}, 
     would you like to join me for dinner?\n`)
 });
-
 
 
 /*
@@ -56,13 +58,16 @@ More Guests:
 You just found a bigger dinner table, 
 so now more space is available. 
 Think of three more guests to invite to dinner.
- */
+*/
 
+
+// Add More Guests
 guests.unshift('Tim Cook');
 guests.splice(guests.length/2, 0, "Brendin Eich");
 guests.push('David Malon');
 
-console.log('<<<< Third Invitation >>>>\n');
+// Print Invitation
+console.count("<<<< Invitation For Dinner >>>>" + '\n');
 guests.forEach(guest => {
     console.log(`Dear ${guest}, 
     would you like to join me for dinner?\n`)
@@ -77,16 +82,17 @@ table won’t arrive in time for the dinner, and you have space for
 only two guests.
 */
 
-console.log(`I can invite only two people for dinner.\n`);
+// Print Message
+console.log(`>>> I can invite only two people for dinner.\n`);
 
-// Can't invite anyone except for two."
+// Shirink Guests
 while(guests.length > 2) {
     let notIntivitedGuest: unknown = guests.pop();
     console.log(`Dear ${notIntivitedGuest}, I'm sorry i can’t invite you to dinner!`);
 }
 console.log('\n');
 
-// invitation for dinner remaining 2 guest
+// Invitation for dinner remaining 2 guest
 guests.forEach(guest => {
     console.log(`Dear ${guest}, you're still invited to dinner.`);
 });
