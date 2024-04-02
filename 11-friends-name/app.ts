@@ -6,7 +6,7 @@ accessing each element in the list, one at a time.
 */
 
 // Import Friends Name
-import friends from "../modules/friends";
+import {friends} from "../modules/names";
 
 // Print Friends Name
 console.group('My Friends Name: ');

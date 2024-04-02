@@ -7,7 +7,7 @@ but each message should be personalized with the person’s name.
 */
 
 // Import Friends Name
-import friends from "../modules/friends";
+import {friends} from "../modules/names";
 
 // Greeting to Friends
 console.group('\nGreetings:');

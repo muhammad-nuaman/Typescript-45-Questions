@@ -10,5 +10,5 @@ these items, such as “I would like to own a Honda motorcycle.”
 Object.defineProperty(exports, "__esModule", { value: true });
 // Declare Bikes
 let bikes = ['Yamaha R1', 'Harley Davidson', 'Honda 150'];
-// Print Bikes
+// Print
 bikes.forEach(bike => console.log(`I would like to ride ${bike}`));
