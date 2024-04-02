@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 44 >>>>>
 Cars:
@@ -9,6 +10,7 @@ name-value pairs, such as a color or an optional feature.
 Print the Object that’s returned to make sure all the information
 was stored correctly.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Car
 function carInfo(manufacturer, modelName, ...moreInfo) {
     const features = { manufacturer, modelName };
@@ -29,4 +31,3 @@ console.log(car2);
 const car3 = carInfo('tesla', 'model 3', { color: 'gray' }, { AI: true }, { sunroof: true }, { camera: true }, { electrical: true });
 // Print
 console.log(car3);
-export {};

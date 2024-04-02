@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 43 >>>>>
 Unchanged Magicians:
@@ -8,6 +9,7 @@ separate array. Call show_magicians() with each array to show that
 you have one array of the original names and one array with the Great
 added to each magician’s name.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Magicians
 const magicians = [
     "Albus Dumbledore",
@@ -32,4 +34,3 @@ show_magicians(magicians);
 console.log('=================');
 console.dir(`Great Magicians: `);
 show_magicians(greatMagicians);
-export {};

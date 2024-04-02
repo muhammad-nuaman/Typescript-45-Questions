@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No 35>>>>>>
 Animals:
@@ -13,6 +14,7 @@ A dog would make a great pet.
 have in common. You could print a sentence such as Any of these animals
 would make a great pet!
  */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Animals Names
 const animals = ['Dog', 'Cat', 'Rabbit'];
 // Animal Characteristics
@@ -31,4 +33,3 @@ characteristic.forEach((char, index) => {
 });
 // Print Message
 console.dir('These animals are great pets');
-export {};

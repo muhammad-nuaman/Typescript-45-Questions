@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 30 >>>>
 Hello Admin: Make a array of five or more usernames,
@@ -5,6 +6,7 @@ including the name 'admin'. Imagine you are writing code that will print a greet
 to each user after they log in to a website.
 Loop through the array, and print a greeting to each user:
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 const status = () => [false, true][Math.floor(Math.random() * 2)];
 const users = [
     { name: "admin", isLogin: status() },
@@ -46,4 +48,3 @@ if (loginUsers.length) {
 else {
     console.log(`\nNo User: We are finding some users!`);
 }
-export {};

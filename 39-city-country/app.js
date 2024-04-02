@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 39 >>>>>
 City Names:
@@ -6,10 +7,10 @@ and its country. The function should return a string formatted like this:
 
 "Lahore, Pakistan"
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 //  City and Country
 const city_country = (city, country) => `${city}, ${country}`;
 // Print
 console.log(city_country('karachi', 'Pakistan'));
 console.log(city_country('Lahore', 'Pakistan'));
 console.log(city_country('Quetta', 'Pakistan'));
-export {};

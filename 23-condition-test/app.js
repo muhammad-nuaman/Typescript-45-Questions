@@ -1,9 +1,11 @@
+"use strict";
 /*
 <<<< Task No: 23 >>>>
 Conditional Tests: Write a series of conditional tests.
 Print a statement describing each test and
 your prediction for the results of each test.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 const vehicle = {
     brand: 'Toyota',
     model: 'Camry',
@@ -46,4 +48,3 @@ console.log(vehicle.price === 30000);
 // 10: Vehicle Ownwer
 console.log(`\nI Bet vehicle Owner is Michel Angelo `);
 console.log(vehicle.owner === 'Michel Angelo');
-export {};

@@ -14,6 +14,6 @@ let grocery: string[] = ["Rice", "Butter", "Chicken"];
 // Through error
 // console.log(grocery['Rice']); 
 
-// Indexing
+// Print with Indexing
 console.log(grocery[0]);
 console.log(grocery['0']); 

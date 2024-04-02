@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /*
 <<<<< Task No: 38 >>>>>>
 Cities:
@@ -13,4 +15,3 @@ describe_city('Tokyo', 'Japan');
 describe_city('Dhaka', 'Bangladesh');
 describe_city('Lahore');
 describe_city();
-export {};

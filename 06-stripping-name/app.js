@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 6 >>>>
 Stripping Names:
@@ -8,9 +9,9 @@ least once. Print the name once, so the whitespace around the
 name is displayed. Then print the name after striping the white
 spaces.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Declare Person's Name
 let person_name = '\tkashif \n';
 // Print
 console.log(person_name); // with spacing
 console.log(person_name.trim()); // without spacing
-export {};

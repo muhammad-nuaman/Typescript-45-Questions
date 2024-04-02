@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 14 >>>>
 Guest List:
@@ -7,6 +8,7 @@ least three people you’d like to invite to dinner.
 Then use your list to print a message to each person,
 inviting them to dinner.
  */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Declare Guests List
 let guests = [
     'Bill Gates',
@@ -74,4 +76,3 @@ guests.forEach(guest => {
 guests.splice(0, guests.length);
 console.log(`\nDinner is over, there are no more guests`);
 console.log(`Remaining Guest: ${guests.length}\n`);
-export {};

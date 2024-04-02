@@ -6,7 +6,7 @@ Write a program that creates Objects containing these items.
 
 
 // Function: create Object
-const booky = 
+const booker = 
 (title: string, author: string, published: number) => {
     return {
         title: title,
@@ -16,8 +16,8 @@ const booky =
 }
 
 // Create Book Objects
-const book1 = booky('The Hobbit', 'J.R.R Tokien', 1937);
-const book2 = booky('Harry Potter', 'J.K Rowling', 1997);
+const book1 = booker('The Hobbit', 'J.R.R Tokien', 1937);
+const book2 = booker('Harry Potter', 'J.K Rowling', 1997);
 
 console.table(book1);
 console.table(book2);

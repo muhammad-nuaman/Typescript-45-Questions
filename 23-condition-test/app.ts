@@ -6,7 +6,7 @@ your prediction for the results of each test.
 */
 
 
-interface Car {
+type Car = {
     brand: string;
     model: string;
     year: number;

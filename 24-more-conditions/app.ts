@@ -10,7 +10,7 @@ each of the following:
 //======================================
 // Interfaces
 //======================================
-interface person {
+type Person = {
     name: string;
     age: number;
     marriedStatus: boolean;
@@ -18,9 +18,9 @@ interface person {
     country: string;
     takeAdmision: boolean,
     university: 'Hardvard' | 'Cambridge',
-    wantSettledForeign: boolean;
+    goAbroadStudy: boolean;
 }
-interface university {
+type University = {
     name: string;
     admissionOpen: boolean,
     ageRequired: {
@@ -33,37 +33,43 @@ interface university {
 //======================================
 // Person
 //======================================
-const person: person = {
+const person: Person = {
     name: 'Ali',
-    age: 32,
+    age: 30,
     marriedStatus: false,
     jobStatus: true,
     country: 'Pakistan',
     takeAdmision: true,
     university: 'Cambridge',
-    wantSettledForeign: true,
+    goAbroadStudy: true,
 }
-
-// Name
-console.log('His name is Ali ', ('Ali' === person.name));
-console.log('His name is ali ', ('ali' === person.name));
-console.log('His name is ALI ', ('ALI' === person.name));
+const myThinking = {
+    name: 'ali',
+};
+// Name Cases
+console.log('Your name is Ali? ', ('Ali' === person.name));
+console.log('Your name is ali?', ('ali' === person.name));
+console.log('Your name is ALI? ', ('ALI' === person.name));
 // Marriage
-console.log(`He's Married`, (true === person.marriedStatus));
+console.log(`I think you're Married`, (true === person.marriedStatus));
 // Job
-console.log(`He's doing Job`, (true === person.jobStatus));
+console.log(`I think You're doing Job`, (true === person.jobStatus));
 // Age
-console.log(`His age is 22`, (22 === person.age));
+console.log(`I think You're older than 22!`, (person.age > 22));
 // living
-console.log(`He's living in Pakistan`, ('Pakistan' === person.country));
+console.log(`I think You're living in Pakistan`, ('Pakistan' === person.country));
 // Admision?
-console.log(`He's want to take admision?`, (true === person.takeAdmision));
+console.log(`I Think want to take admision?`, (true === person.takeAdmision));
 // University?
 if (person.takeAdmision) {
-        console.log(`Which University he's want to take admision?`, person.university);
+        console.log(`Which University You want to take admision?`, person.university);
 }
 // Foreign
-console.log(`He's want to Settled in foreign?`, (true === person.wantSettledForeign));
+
+console.log(`I think You want to go to abroad?`, (true === person.goAbroadStudy));
+if (!person.goAbroadStudy) {
+    console.log(`He does not want to go abroad.`);
+}
 
 // spaces
 console.log('\n');
@@ -73,7 +79,7 @@ console.log('\n');
 //======================================
 // Universities
 //======================================
-const university1: university = {
+const university1: University = {
     name: 'Hardvard',
     admissionOpen:  true,
     ageRequired: {
@@ -81,7 +87,7 @@ const university1: university = {
         max: 32
     }
 }
-const university2: university = {
+const university2: University = {
     name: 'Cambridge',
     admissionOpen: true,
     ageRequired: {

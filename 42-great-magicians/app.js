@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 42 >>>>>
 Great Magicians:
@@ -6,6 +7,7 @@ Write a function called make_great() that modifies the array of magicians
 by adding the phrase the Great to each magician’s name.
 Call show_magicians() to see that the list has actually been modified.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Magicians Names
 const magicians = [
     "Albus Dumbledore",
@@ -24,4 +26,3 @@ function make_great(magicians) {
 }
 make_great(magicians);
 show_magicians(magicians);
-export {};

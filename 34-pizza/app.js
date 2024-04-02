@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 34 >>>>
 Pizzas:
@@ -5,6 +6,7 @@ Think of at least three kinds of your favorite pizza.
 Store these pizza names in a array, and then use a for loop to
 print the name of each pizza.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Pizzas
 const pizzas = [
     "Margherita",
@@ -26,4 +28,3 @@ for (let i = 0; i < pizzas.length; i++)
 // pizzas.forEach(pizza => opinions.forEach(opinion => console.log(`${pizzas} ${opinion}\n`)));
 // Print simple statement
 console.log('"I really like pizza!"');
-export {};

@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 10 >>>>
 Adding Comments:
@@ -7,6 +8,7 @@ specific to write because your programs are too simple at this point,
 just add your name and the current date at the top of each program file.
 Then write one sentence describing what the program does.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Declare My Name 
 let myName = 'Muhammad Nuaman';
 // Today Date: tue 12/march/2024
@@ -21,4 +23,3 @@ entil i've done 9 tasks and now
 i'm doing task no 10 that name is "adding commments" 
 on today ${date}
 `);
-export {};

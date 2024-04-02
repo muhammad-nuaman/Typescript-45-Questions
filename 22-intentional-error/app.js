@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 22 >>>>
 Intentional Error:
@@ -7,11 +8,11 @@ Change an index in one of your programs to produce
 an index error. Make sure you correct the error
 before closing the program.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // A Grocery List
 let grocery = ["Rice", "Butter", "Chicken"];
 // Through error
 // console.log(grocery['Rice']); 
-// Indexing
+// Print with Indexing
 console.log(grocery[0]);
 console.log(grocery['0']);
-export {};

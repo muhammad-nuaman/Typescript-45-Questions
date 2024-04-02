@@ -7,13 +7,13 @@ Write a program that creates a list containing these items.
 */
 
 // Function: create list
-const lister = (...list: string[]) => list;    
+const listing = (...list: string[]) => list;    
 
 // mountains list
-const mountains = lister('k2', 'Mount Everest');
+const mountains = listing('k2', 'Mount Everest');
 
 // cities list
-const cities = lister('Karachi', 'Lahore');
+const cities = listing('Karachi', 'Lahore');
 
 // Print Lists
 console.table(mountains);

@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 29 >>>>
 Favorite Fruit:
@@ -5,6 +6,7 @@ Make a array of your favorite fruits,
 and then write a series of independent if statements
 that check for certain fruits in your array.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Favorite Fruits
 const favoriteFruits = ["Apple", "Banana", "Mango"];
 const fruits = [
@@ -20,4 +22,3 @@ fruits.forEach(fruit => {
         console.log(`You really like ${fruit}`);
     }
 });
-export {};

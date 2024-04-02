@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 40 >>>>>
 Album:
@@ -12,6 +13,7 @@ value for the number of tracks, add that value to the album’s Object.
 Make at least one new function call that includes the number of tracks on an
 album.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 function make_album(artist, title, tracks) {
     if (tracks)
         return { artist, title, tracks };
@@ -24,4 +26,3 @@ const album3 = make_album('Saleem Jaweed', 'Kiyara', 14);
 console.log(album1);
 console.log(album2);
 console.log(album3);
-export {};

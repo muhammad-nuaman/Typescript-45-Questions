@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No 36 >>>>>>
 
@@ -14,6 +15,7 @@ Modify the make_shirt() function so that shirts are large by default with
 a message that reads I love TypeScript. Make a large shirt and a medium
 shirt with the default message, and a shirt of any size with a different message.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Make Shirts
 function make_shirt(
 // shirt default configuration
@@ -40,4 +42,3 @@ make_shirt('Small', 'Grey', 'Embroidery', 'make it simple');
 make_shirt('Large', 'White', 'Typography', 'My love Forever JavaScript');
 // Default 
 make_shirt();
-export {};

@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<< Task No: 25 >>>>
 Alien Colors #1:
@@ -5,6 +6,7 @@ Imagine an alien was just shot down in a game.
 Create a variable called alien_color and assign it a value of
 'green', 'yellow', or 'red'.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // multiple colors 
 const colors = ['green', 'yellow', 'red'];
 // random indexing
@@ -66,4 +68,3 @@ else if (alien_color === 'red') {
     // Earn 15 point
     console.log('you just earned 15 points\n');
 }
-export {};

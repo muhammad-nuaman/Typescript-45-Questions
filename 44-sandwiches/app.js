@@ -1,3 +1,4 @@
+"use strict";
 /*
 <<<<< Task No: 44 >>>>>
 Sandwiches:
@@ -7,6 +8,7 @@ function call provides, and it should print a summary of the sandwich that is
 being ordered. Call the function three times, using a different number of
 arguments each time.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Define Sandwich
 function sandwich(...order) {
     console.count('\nSandwich Order');
@@ -16,4 +18,3 @@ function sandwich(...order) {
 sandwich('white bread', 'tomato ketchup', 'cucumber and tomato', 'chicken spread');
 sandwich('brown bread', 'chilli sauce', 'tomato', 'chicken spread');
 sandwich('white bread', 'tomato ketchup', 'cucumber', 'veg spread');
-export {};

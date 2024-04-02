@@ -1,9 +1,11 @@
+"use strict";
 /*
 <<<< Task No: 28 >>>>
 Stages of Life: Write an if-else chain that determines
 a person’s stage of life.
 Set a value for the variable age, and then:
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // Provide Random Value between 1 to 70
 let random_age = Math.floor(Math.random() * 70 + 1);
 // Provide Random Value between 0 to 5
@@ -47,4 +49,3 @@ else if (person_age >= 20 && person_age < 65) {
 else if (person_age >= 65) {
     console.log(`He's a Elder`);
 }
-export {};
