@@ -10,8 +10,8 @@ spaces.
 */
 
 // Declare Person's Name
-let person_name:string = '\tkashif \n';
+let person:string = '\tkashif \n';
 
-// Print
-console.log(person_name);           // with spacing
-console.log(person_name.trim());    // without spacing
+// Print Name
+console.log(person);           // with spacing
+console.log(person.trim());    // without spacing

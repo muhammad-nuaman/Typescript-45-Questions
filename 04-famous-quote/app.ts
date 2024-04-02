@@ -6,6 +6,7 @@ Print the quote and the name of its author. Your output should
 look something like the following, including the quotation marks:
 */
 
+// Import Quote
 import quote from '../modules/quotes.js';
 
 

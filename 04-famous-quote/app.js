@@ -10,6 +10,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Import Quote
 const quotes_js_1 = __importDefault(require("../modules/quotes.js"));
 // Muhammad Ali Jinnah's Famous Quote
 console.log(`Muhammad Ali Jinnnah once said,\n"${quotes_js_1.default}"`);

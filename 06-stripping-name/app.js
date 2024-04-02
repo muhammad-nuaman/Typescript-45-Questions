@@ -11,7 +11,7 @@ spaces.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 // Declare Person's Name
-let person_name = '\tkashif \n';
-// Print
-console.log(person_name); // with spacing
-console.log(person_name.trim()); // without spacing
+let person = '\tkashif \n';
+// Print Name
+console.log(person); // with spacing
+console.log(person.trim()); // without spacing

@@ -7,7 +7,7 @@ your favorite number. Print that message.
 */
 
 // Declare Favorite Number
-let my_fav_number: number = 7;
+let fav_num: number = 7;
 
 // Print Favorite Number
-console.log(`My favorite number is ${my_fav_number}.`);
+console.log(`My favorite number is ${fav_num}.`);
