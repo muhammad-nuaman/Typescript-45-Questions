@@ -27,25 +27,25 @@ let person_name = persons[random_name];
 console.log(`${person_name} age is ${person_age}`);
 // 1. Baby
 if (person_age < 2) {
-    console.log(`He's a baby`);
+    console.dir(`He's a baby`);
 }
 // 2. Toddler
 else if (person_age >= 2 && person_age < 4) {
-    console.log(`He's a toddler`);
+    console.dir(`He's a toddler`);
 }
 // 3. Kid
 else if (person_age >= 4 && person_age < 13) {
-    console.log(`He's a kid`);
+    console.dir(`He's a kid`);
 }
 // 4. Teenager
 else if (person_age >= 13 && person_age < 20) {
-    console.log(`He's a teenager`);
+    console.dir(`He's a teenager`);
 }
 // 5. Adult
 else if (person_age >= 20 && person_age < 65) {
-    console.log(`He's a Adult`);
+    console.dir(`He's Adult`);
 }
 // 6. Elder
 else if (person_age >= 65) {
-    console.log(`He's a Elder`);
+    console.dir(`He's Elder`);
 }

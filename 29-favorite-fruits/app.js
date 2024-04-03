@@ -11,10 +11,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const favoriteFruits = ["Apple", "Banana", "Mango"];
 const fruits = [
     "Banana",
-    "Mango",
     "Pineapple",
     "Apple",
-    "Kiwi"
+    "Kiwi",
+    "Mango"
 ];
 //  Check Favroite Fruits
 fruits.forEach(fruit => {

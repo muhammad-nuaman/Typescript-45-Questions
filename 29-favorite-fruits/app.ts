@@ -10,11 +10,11 @@ that check for certain fruits in your array.
 const favoriteFruits: string[] = ["Apple", "Banana", "Mango"];
 const fruits: string[] = [
     "Banana",
-    "Mango",
     "Pineapple",
     "Apple",
-    "Kiwi"
-  ];
+    "Kiwi",
+    "Mango"
+];
   
 
 
