@@ -19,32 +19,25 @@ const users = [
 users.forEach((user) => {
     if (user.isLogin) {
         if (user.name.includes('admin')) {
-            console.log(`Hi admin, would you like to see a status report?`);
+            console.log(`Hi Admin, would you like to see a status report?`);
         }
         else {
-            console.log(`Hi ${user.name}, thank you for logging in again.`);
+            console.log(`Hi ${user.name}, thank you for login again.`);
         }
     }
 });
-/*
-<<<< Task No: 31 >>>>
-No Users:
-Add an if test to Exercise 30 to make sure the list of users is not empty.
- */
-// Empty Array
-const loginUsers = [];
-// Push Login User
-users.forEach((user) => { if (user.isLogin)
-    loginUsers.push(user); });
-// Print Message (when users not login)
-if (loginUsers.length) {
-    if (loginUsers.length > 1) {
-        console.log(`\n${loginUsers.length} users are logged in`);
-    }
-    else {
-        console.log(`\nOnly ${loginUsers.length} user is logged in`);
-    }
-}
-else {
-    console.log(`\nNo User: We are finding some users!`);
-}
+// /*
+// <<<< Task No: 31 >>>>
+// No Users: 
+// Add an if test to Exercise 30 to make sure the list of users is not empty.
+//  */
+// // Empty Array
+// const loginUsers:{name: string, isLogin: boolean}[] = [];
+// // Push Login User
+// users.forEach((user)=>{if(user.isLogin) loginUsers.push(user)})
+// // Print Message (when users not login)
+// if (loginUsers.length) {
+//     if (loginUsers.length > 1) {console.log(`\n${loginUsers.length} users are logged in`)}
+//     else {console.log(`\nOnly ${loginUsers.length} user is logged in`)}
+// }
+// else {console.log(`\nNo User: We are finding some users!`)}
