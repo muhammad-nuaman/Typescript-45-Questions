@@ -6,127 +6,90 @@ write more tests. Have at least one True and one False result for
 each of the following:
 */
 
-
-//======================================
-// Interfaces
-//======================================
 type Person = {
-    name: string;
-    age: number;
-    marriedStatus: boolean;
-    jobStatus: boolean;
-    country: string;
-    takeAdmision: boolean,
-    university: 'Hardvard' | 'Cambridge',
-    goAbroadStudy: boolean;
+  name: string;
+  age: number;
+  gender: string;
+  isMarried: boolean;
+  isGraduate: boolean;
+  haveJob: boolean;
+  courses: string[];
 }
-type University = {
-    name: string;
-    admissionOpen: boolean,
-    ageRequired: {
-        min: number,
-        max: number
-    }
-}
-//======================================
 
-//======================================
-// Person
-//======================================
 const person: Person = {
-    name: 'Ali',
-    age: 30,
-    marriedStatus: false,
-    jobStatus: true,
-    country: 'Pakistan',
-    takeAdmision: true,
-    university: 'Cambridge',
-    goAbroadStudy: true,
-}
-const myThinking = {
-    name: 'ali',
-};
-// Name Cases
-console.log('Your name is Ali? ', ('Ali' === person.name));
-console.log('Your name is ali?', ('ali' === person.name));
-console.log('Your name is ALI? ', ('ALI' === person.name));
-// Marriage
-console.log(`I think you're Married`, (true === person.marriedStatus));
-// Job
-console.log(`I think You're doing Job`, (true === person.jobStatus));
-// Age
-console.log(`I think You're older than 22!`, (person.age > 22));
-// living
-console.log(`I think You're living in Pakistan`, ('Pakistan' === person.country));
-// Admision?
-console.log(`I Think want to take admision?`, (true === person.takeAdmision));
-// University?
-if (person.takeAdmision) {
-        console.log(`Which University You want to take admision?`, person.university);
-}
-// Foreign
-
-console.log(`I think You want to go to abroad?`, (true === person.goAbroadStudy));
-if (!person.goAbroadStudy) {
-    console.log(`He does not want to go abroad.`);
+    name: "Hussain",
+    age: 25,
+    gender: "male",
+    isMarried: false,
+    isGraduate: true,
+    haveJob: true,
+    courses: ['Web Development', 'Data Science', 'GenEng']
 }
 
-// spaces
+// Not Equal Condition
+console.log(`\nPerson Name (${person.name}) is Not Hussain`);
+console.log(person.name !== 'Hussain');
+
+// Not Equal Condition with Lower Case
+console.log(`\nPerson Name (${person.name}) is Not hussain`);
+console.log(person.name !== 'hussain');
+
+// Equal Condition
+console.log(`\nPerson Name (${person.name}) is Hussain`);
+console.log(person.name === 'Hussain');
+
+// Equal Condition with Lower Case
+console.log(`\nPerson Name (${person.name}) is hussain`);
+console.log(person.name === 'hussain');
+
+
+// Greater than Age
+console.log(`\nPerson Age (${person.age}) is Greater than 30`);
+console.log(person.age > 30);
+
+// Greater than or equal Age 
+console.log(`\nPerson Age (${person.age}) is Greater than or equal 25`);
+console.log(person.age >= 25);
+
+// Less than Age
+console.log(`\nPerson Age (${person.age}) is Less than 30`);
+console.log(person.age < 30);
+
+// Less than or equal Age 
+console.log(`\nPerson Age (${person.age}) is Less than or equal 25`);
+console.log(person.age <= 25);
+
+// Person Marriage Status
+console.log(`\nPerson is Not Married!`);
+console.log(!person.isMarried);
+
+// Person Graduate Status
+console.log(`\nPerson is Graduate!`);
+console.log(person.isGraduate);
+
+
+// Person Graduate Status
+console.log(`\nPerson have a Job!`);
+console.log(person.haveJob);
+
+
+// Person Marriage and Graduate Status
+console.log(`\nPerson is Graduate and have a Job`);
+console.log(person.isGraduate && person.haveJob);
+
+// Visa Required
+console.log();
+console.dir(`Visa Required:`);
+console.log('Person has Married or Graduate!\n');
+console.log(`Person Married State: ${person.isMarried}`);
+console.log(`Person Graduate State: ${person.isGraduate}`);
+console.log();
+console.dir(`Visa Eligibility: ${person.isMarried || person.isGraduate}`);
 console.log('\n');
 
 
-
-//======================================
-// Universities
-//======================================
-const university1: University = {
-    name: 'Hardvard',
-    admissionOpen:  true,
-    ageRequired: {
-        min: 18,
-        max: 32
-    }
-}
-const university2: University = {
-    name: 'Cambridge',
-    admissionOpen: true,
-    ageRequired: {
-        min: 18,
-        max: 36
-    }
-}
-
-if (person.takeAdmision) {
-    // Hardvard University
-    if (person.university === 'Hardvard') {
-        // Admision Open
-        if (university1.admissionOpen) {
-            console.log('Hardvard admisions are open');            
-            // Age Required
-            if ( 
-                person.age >= university1.ageRequired.min &&   
-                person.age <= university1.ageRequired.max   
-                ) 
-            {console.log('Your are Illegible')} //illegible
-            else {console.log('Your are not Illegible')} // not illegible
-            }
-        // Admision not Open
-        else {console.log('Hardvard admisions are not open')}
-    }
-    
-    // Cambridge University
-    else if (person.university === 'Cambridge') {
-        if (university2.admissionOpen) {
-            console.log('Cambridge admisions are open');
-            // Age Required
-            if ( 
-                person.age >= university2.ageRequired.min &&   
-                person.age <= university2.ageRequired.max   
-                ) 
-            {console.log('Your are Illegible')} // illegible
-            else {console.log('Your are not Illegible')} // not illegible            
-        }
-        // Admision not Open
-        else {console.log('Cambridge admisions are not open')}
-    }
-}
+// Courses
+console.log('\nPerson taking Graphic Design Course?');
+console.log(person.courses.includes('Graphic Design'));
+console.log('\nPerson taking GenEng Course?');
+console.log(person.courses.includes('GenEng'));
