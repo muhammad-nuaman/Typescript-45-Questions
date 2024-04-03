@@ -7,20 +7,18 @@ Create a variable called alien_color and assign it a value of
 'green', 'yellow', or 'red'.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// multiple colors 
+// Multiple Colors
 const colors = ['green', 'yellow', 'red'];
-// random indexing
+// Random Indexing
 const random = Math.floor(Math.random() * 3);
-// random choice
+// Random Choice
 const alien_color = colors[random];
-// Print Choice
-console.log(`\nYou Choose Color: ${alien_color}`);
-// choose green 
+// First Program
+console.dir('First Program');
+console.log(`Alien Color: ${alien_color}`);
+// choosing green 
 if (alien_color === 'green') {
-    // Program Heading
-    console.log('\nFirst Program');
-    // Earn 5 point
-    console.log('you just earned 5 points\n');
+    console.log('You just earned 5 points\n');
 }
 /*
 <<<< Task No: 26 >>>>
@@ -28,43 +26,34 @@ Alien Colors #2:
 Choose a color for an alien as you did in Exercise 25,
 and write an if-else chain.
 */
-// choose green
+// Second Program
+console.dir('Second Program');
+console.log(`Alien Color: ${alien_color}`);
+// choosing green
 if (alien_color === 'green') {
-    // Program Heading
-    console.log('\nSecond Program');
-    //  Earn 5 point
-    console.log('you just earned 5 points\n');
+    console.log('You just earned 5 points\n');
 }
-// choose another 
+// choosing another 
 else {
-    // Program Heading
-    console.log('\nSecond Program');
-    // Earn 10 point
-    console.log('you just earned 10 points\n');
+    console.log('You just earned 10 points\n');
 }
-/*
-<<<< Task No: 27 >>>>
-Alien Colors #3:
-Turn your if-else chain from Exercise 5-4 into an if-else chain.
-*/
-// choose green
+// /*
+// <<<< Task No: 27 >>>>
+// Alien Colors #3: 
+// Turn your if-else chain from Exercise 25 into an if-else chain.
+// */
+// Third Program
+console.dir('Third Program');
+console.log(`Alien Color: ${alien_color}`);
+// choosing green
 if (alien_color === 'green') {
-    // Program Heading
-    console.log('\nThird Program');
-    //  Earn 5 point
     console.log('you just earned 5 points\n');
 }
-// choose yellow
+// choosing yellow
 else if (alien_color === 'yellow') {
-    // Program Heading
-    console.log('\nThird Program');
-    // Earn 10 point
     console.log('you just earned 10 points\n');
 }
-// choose red
+// choosing red
 else if (alien_color === 'red') {
-    // Program Heading
-    console.log('\nThird Program');
-    // Earn 15 point
     console.log('you just earned 15 points\n');
 }

@@ -6,9 +6,9 @@ Print the quote and the name of its author. Your output should
 look something like the following, including the quotation marks:
 */
 
-// Import Quote
-import quote from '../modules/quotes.js';
 
 
 // Muhammad Ali Jinnah's Famous Quote
-console.log(`Muhammad Ali Jinnnah once said,\n"${quote}"`);
+console.log(`Muhammad Ali Jinnnah once said,
+"Think 100 times before you take a decision
+But once that decision is taken, stand by it as one man"`);

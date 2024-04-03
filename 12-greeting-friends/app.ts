@@ -6,8 +6,8 @@ print a message to them. The text of each message should be the same,
 but each message should be personalized with the person’s name.
 */
 
-// Import Friends Name
-import {friends} from "../modules/names";
+// Declare Friends Name
+const friends = ['Kashif', 'Husnain', 'Zeeshan', 'Bilal'];
 
 // Greeting to Friends
 console.group('\nGreetings:');
