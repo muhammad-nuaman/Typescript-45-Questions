@@ -5,7 +5,6 @@ through 18, print a message indicating the number of people
 you are inviting to dinner.
  */
 
-
 // Guests List. 
 let guests: string[] = [
     'Bill Gates',

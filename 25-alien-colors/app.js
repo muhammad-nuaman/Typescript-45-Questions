@@ -20,6 +20,9 @@ console.log(`Alien Color: ${alien_color}`);
 if (alien_color === 'green') {
     console.log('You just earned 5 points\n');
 }
+else {
+    console.log('');
+}
 /*
 <<<< Task No: 26 >>>>
 Alien Colors #2:
