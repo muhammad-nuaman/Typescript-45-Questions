@@ -9,10 +9,10 @@ Write a program that creates a list containing these items.
 Object.defineProperty(exports, "__esModule", { value: true });
 // Function: create list
 const listing = (...list) => list;
-// mountains list
+// Mountains List
 const mountains = listing('k2', 'Mount Everest');
-// cities list
-const cities = listing('Karachi', 'Lahore');
+// Cities List
+const cities = listing('Karachi', 'Lahore', 'Islamabad');
 // Print Lists
 console.table(mountains);
 console.table(cities);

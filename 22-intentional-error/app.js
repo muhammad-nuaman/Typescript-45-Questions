@@ -11,7 +11,7 @@ before closing the program.
 Object.defineProperty(exports, "__esModule", { value: true });
 // A Grocery List
 let grocery = ["Rice", "Butter", "Chicken"];
-// Through error
+// Show Squiggly line
 // console.log(grocery['Rice']); 
 // Print with Indexing
 console.log(grocery[0]);

@@ -11,7 +11,7 @@ before closing the program.
 // A Grocery List
 let grocery: string[] = ["Rice", "Butter", "Chicken"];
 
-// Through error
+// Show Squiggly line
 // console.log(grocery['Rice']); 
 
 // Print with Indexing

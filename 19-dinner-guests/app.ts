@@ -5,13 +5,15 @@ through 18, print a message indicating the number of people
 you are inviting to dinner.
  */
 
-// Dinner Guests list
+
+// Guests List. 
 let guests: string[] = [
-    'Bill Gates', 
-    'Mark Zuckerberg', 
-    'Elon Musk', 
+    'Bill Gates',
+    'Mark Zuckerberg',
+    'Elon Musk',
     'Steve Jobs'
 ];
 
-// number of guests 
-console.log(`I was inviting ${guests.length} people to dinner.`);
+// Number of Guests
+console.log(`I was inviting ${guests.length}`)
+

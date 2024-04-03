@@ -9,11 +9,11 @@ Write a program that creates a list containing these items.
 // Function: create list
 const listing = (...list: string[]) => list;    
 
-// mountains list
+// Mountains List
 const mountains = listing('k2', 'Mount Everest');
 
-// cities list
-const cities = listing('Karachi', 'Lahore');
+// Cities List
+const cities = listing('Karachi', 'Lahore', 'Islamabad');
 
 // Print Lists
 console.table(mountains);

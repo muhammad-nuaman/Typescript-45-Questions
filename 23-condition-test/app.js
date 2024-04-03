@@ -13,7 +13,7 @@ const vehicle = {
     color: 'Silver',
     isAutomatic: true,
     mileage: 5000,
-    fuelType: 'gasoline',
+    fuelType: 'electric',
     topSpeed: 150,
     price: 25000,
     owner: 'Michel Angelo',
@@ -37,8 +37,8 @@ console.log(vehicle.isAutomatic === true);
 console.log(`\nI predict vehicle millage is 4500`);
 console.log(vehicle.mileage === 4500);
 // 7: Vehicle Fueltype
-console.log(`\nI predict vehicle is Electrical`);
-console.log(vehicle.fuelType === "electric");
+console.log(`\nI predict vehicle is Diesel`);
+console.log(vehicle.fuelType === "diesel");
 // 8: Vehicle Top Speed
 console.log(`\nI predict vehicle Top Speed is 150 mph`);
 console.log(vehicle.topSpeed === 150);
