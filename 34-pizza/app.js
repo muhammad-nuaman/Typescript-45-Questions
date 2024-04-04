@@ -24,7 +24,7 @@ const opinions = [
 // Print Opinions (First Way)
 for (let i = 0; i < pizzas.length; i++)
     console.log(`${pizzas[i]} ${opinions[i]} \n`);
-// Print Opinions 2 (Second Way)
-// pizzas.forEach(pizza => opinions.forEach(opinion => console.log(`${pizzas} ${opinion}\n`)));
-// Print simple statement
-console.log('"I really like pizza!"');
+// Print Opinions (Second Way)
+// pizzas.forEach((pizza, index) => console.log(`${pizza} ${opinions[index]}\n`));
+// Print Final statement
+console.dir("> I really like pizza!");

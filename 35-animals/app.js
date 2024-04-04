@@ -24,12 +24,16 @@ const characteristic = [
     'Rabbit can also be very affectionate pet, bonding closely with their owner through gentle interactions and snuggling. '
 ];
 // Print Animals Names
-animals.forEach((name, index) => console.log((++index), name));
+animals.forEach((animal, index) => console.log((++index), animal));
 console.log(''); // line space
 // Print Animals characteristic
-characteristic.forEach((char, index) => {
+for (let index = 0; index < animals.length; index++) {
     console.dir(animals[index]);
-    console.log(char, '\n');
-});
+    console.log(characteristic[index], '\n');
+}
+// characteristic.forEach((char, index) => {
+//     console.dir(animals[index]);
+//     console.log(char, '\n')
+// });
 // Print Message
 console.dir('These animals are great pets');

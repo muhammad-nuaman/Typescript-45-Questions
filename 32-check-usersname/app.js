@@ -16,6 +16,7 @@ const currentUsers = [
     "Yusuf",
     "Khadija",
     "Omar",
+    "Amina"
 ];
 const newUsers = [
     "Hassan",

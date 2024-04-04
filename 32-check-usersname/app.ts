@@ -15,6 +15,7 @@ const currentUsers: string[] = [
     "Yusuf",
     "Khadija",
     "Omar",
+    "Amina"
 ];
 
 const newUsers: string[] = [

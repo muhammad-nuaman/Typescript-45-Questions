@@ -7,7 +7,9 @@ to each user after they log in to a website.
 Loop through the array, and print a greeting to each user:
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+// Login Status
 const status = () => [false, true][Math.floor(Math.random() * 2)];
+// Users
 const users = [
     { name: "admin", isLogin: status() },
     { name: "Ali Khan", isLogin: status() },
@@ -16,9 +18,11 @@ const users = [
     { name: "Aisha Malik", isLogin: status() },
     { name: "Ibrahim Ahmed", isLogin: status() },
 ];
+// Check Login Users and Admin
+console.log('');
 users.forEach((user) => {
     if (user.isLogin) {
-        if (user.name.includes('admin')) {
+        if (user.name === 'admin') {
             console.log(`Hi Admin, would you like to see a status report?`);
         }
         else {
@@ -31,13 +35,20 @@ users.forEach((user) => {
 // No Users: 
 // Add an if test to Exercise 30 to make sure the list of users is not empty.
 //  */
-// // Empty Array
-// const loginUsers:{name: string, isLogin: boolean}[] = [];
-// // Push Login User
-// users.forEach((user)=>{if(user.isLogin) loginUsers.push(user)})
-// // Print Message (when users not login)
-// if (loginUsers.length) {
-//     if (loginUsers.length > 1) {console.log(`\n${loginUsers.length} users are logged in`)}
-//     else {console.log(`\nOnly ${loginUsers.length} user is logged in`)}
-// }
-// else {console.log(`\nNo User: We are finding some users!`)}
+// Empty Array
+const loginUsers = [];
+// Push Login Users
+users.forEach(user => { if (user.isLogin)
+    loginUsers.push(user); });
+// Print Message (when users not login)
+if (loginUsers.length) {
+    if (loginUsers.length > 1) {
+        console.log(`\n${loginUsers.length} users are logged in`);
+    }
+    else {
+        console.log(`\nOnly ${loginUsers.length} user is logged in`);
+    }
+}
+else {
+    console.log(`\nNo User: We are finding some users!`);
+}
