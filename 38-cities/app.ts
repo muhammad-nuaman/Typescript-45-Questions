@@ -7,15 +7,14 @@ such as Karachi is in Pakistan. Give the parameter for the country a
 default value. Call your function for three different cities, 
 at least one of which is not in the default country.
  */
-function describe_city(
-    city: string = 'karachi',
-    country: string = 'Pakistan'
-    
-) {console.log(`${city} is the city of ${country}`)}
 
-// Print Cities and Countries Name
-describe_city('Tokyo', 'Japan');
-describe_city('Dhaka', 'Bangladesh');
+// Define Function 
+function describe_city (city: string, country: string = 'Pakistan') {
+    console.log(`${city} is in ${country}`);
+}
+
+// Call Function
+describe_city('Karachi');
 describe_city('Lahore');
-describe_city();
+describe_city('Ahmedabad', 'India');
 

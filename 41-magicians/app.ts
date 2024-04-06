@@ -1,22 +1,26 @@
 /*
 <<<<< Task No: 41 >>>>>
-Magicians:
+
+# Magicians:
+
 Make an array of magician’s names. 
 Pass the array to a function called show_magicians(), 
 which prints the name of each magician in the array.
+
 */
 
-// Magicians Names
+// Define Magicians Name
 const magicians: string[] = [
-    "Albus Dumbledore", 
-    "Harry Potter", 
-    "Ronald Weasley"
-]
+    'Albus Dumbledore',
+    'Harry Potter',
+    'Ronald Weasley',
+    'Hermione Granger'
+];
 
-
-function show_magicians (magicians: string[]) {
-    magicians.forEach(magician => console.log(magician))
+// Define Function to Print Magicians Name
+function show_magicians(magicians: string[]) {
+    magicians.forEach(magician => console.log(magician));
 }
+
+// Call Function to Print Magicians Name
 show_magicians(magicians);
-
-

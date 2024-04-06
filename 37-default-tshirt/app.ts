@@ -28,9 +28,9 @@ function make_shirt(
 // Default: Size and Text
 make_shirt();
 
-// Default: only Size
+// Default: Size
 make_shirt('Medium');
 
-// Default: No One
+// Default: Nothing
 make_shirt('Small', '♡ Typescript ♡');
 

@@ -14,15 +14,22 @@ Make at least one new function call that includes the number of tracks on an
 album.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+// Define Function: Make Album
 function make_album(artist, title, tracks) {
     if (tracks)
         return { artist, title, tracks };
     else
         return { artist, title };
 }
-const album1 = make_album('Yasir Akhtar', 'Jogi');
-const album2 = make_album('Amir Saleem', 'Ajnabi');
-const album3 = make_album('Saleem Jaweed', 'Kiyara', 14);
+// Call Function: Make Album
+let album1 = make_album('Yasir Akhtar', 'Jogi');
+let album2 = make_album('Amir Saleem', 'Ajnabi');
+let album3 = make_album('Saleem Jaweed', 'Kiyara');
+// Print Function Values
 console.log(album1);
 console.log(album2);
 console.log(album3);
+// Call Function: Make Album
+let album4 = make_album('Haroon', 'Harron Ki Awaz', 8);
+// Print Function Values
+console.log(album4);

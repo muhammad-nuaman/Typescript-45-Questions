@@ -10,27 +10,30 @@ you have one array of the original names and one array with the Great
 added to each magician’s name.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Magicians
+// Define Magicans Name 
 const magicians = [
     "Albus Dumbledore",
     "Harry Potter",
-    "Ronald Weasley"
+    "Ronald Weasley",
+    "Hermione Granger",
 ];
-// Show Magicians
+// Define Function: Print Magicians Name
 function show_magicians(magicians) {
     magicians.forEach(magician => console.log(magician));
 }
-// Make The Great Magicians
+// Define Function: Make Great Magicians Name
 function make_great(magicians) {
     magicians.forEach((magician, index, magicians) => {
         magicians[index] = `The Great ${magician}`;
     });
     return magicians;
 }
-// The Great Magicians
-const greatMagicians = make_great([...magicians]);
+// Sepearte The Great Magicians Name
+const theGreatMagicians = make_great([...magicians]);
+// Print The Magicians Name
 console.dir(`Magicians:`);
 show_magicians(magicians);
 console.log('=================');
-console.dir(`Great Magicians: `);
-show_magicians(greatMagicians);
+// Print The Great Magicians Name
+console.dir(`The Great Magicians: `);
+theGreatMagicians.forEach(greatMagician => console.log(greatMagician));
