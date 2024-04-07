@@ -11,23 +11,11 @@ Print the Object that’s returned to make sure all the information
 was stored correctly.
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Car
-function carInfo(manufacturer, modelName, ...moreInfo) {
-    const features = { manufacturer, modelName };
-    moreInfo.forEach((feature, index, morefeatures) => {
-        Object.assign(features, morefeatures[index]);
-    });
-    return features;
+// Define Function
+function cars(manufacturer, model, ...moreinfo) {
+    const carInfo = { manufacturer, model };
+    moreinfo.forEach(info => Object.assign(carInfo, info));
+    console.table(carInfo);
 }
-// Declare car 1
-const car1 = carInfo('nissan', 'altima', { color: 'white' }, { automatic: true });
-// Print
-console.log(car1);
-// Declare Car 2
-const car2 = carInfo('toyota', 'camry', { color: 'red' }, { automatic: true }, { sunroof: true });
-// Print 
-console.log(car2);
-// Declare Car 3
-const car3 = carInfo('tesla', 'model 3', { color: 'gray' }, { AI: true }, { sunroof: true }, { camera: true }, { electrical: true });
-// Print
-console.log(car3);
+// Call Function
+cars('Tesla', 'Model 3', { color: 'Black' }, { feature: 'Autopilot' });
