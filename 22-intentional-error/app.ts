@@ -11,6 +11,10 @@ before closing the program.
 // A Grocery List
 let grocery: string[] = ["Rice", "Butter", "Chicken"];
 
+
+// Through Error
+// console.log(grocery[Rice]);
+
 // Show Squiggly line
 // console.log(grocery['Rice']); 
 

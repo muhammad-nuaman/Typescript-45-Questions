@@ -1,7 +1,9 @@
 /*
 <<<< Task No: 25 >>>>
-Alien Colors #1: 
-Imagine an alien was just shot down in a game.
+
+# Alien Colors #1: 
+
+> Imagine an alien was just shot down in a game.
 Create a variable called alien_color and assign it a value of
 'green', 'yellow', or 'red'.
 */
@@ -24,9 +26,11 @@ else {console.log('')}
 
 /*
 <<<< Task No: 26 >>>>
-Alien Colors #2: 
-Choose a color for an alien as you did in Exercise 25, 
+
+# Alien Colors #2: 
+> Choose a color for an alien as you did in Exercise 25, 
 and write an if-else chain.
+
 */
 
 // Second Program
@@ -39,11 +43,13 @@ if (alien_color === 'green') {console.log('You just earned 5 points\n')}
 else {console.log('You just earned 10 points\n')}
 
 
-// /*
-// <<<< Task No: 27 >>>>
-// Alien Colors #3: 
-// Turn your if-else chain from Exercise 25 into an if-else chain.
-// */
+/*
+<<<< Task No: 27 >>>>
+
+# Alien Colors #3: 
+
+> Turn your if-else chain from Exercise 25 into an if-else chain.
+*/
 
 // Third Program
 console.dir('Third Program');

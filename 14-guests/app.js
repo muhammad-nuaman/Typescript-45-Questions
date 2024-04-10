@@ -13,7 +13,7 @@ to dinner.
 
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Declare Guests List
+// Define Guests List
 const guests = [
     'Bill Gates',
     'Elon Musk',

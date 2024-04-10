@@ -12,7 +12,7 @@ to dinner.
 
 */
 
-// Declare Guests List
+// Define Guests List
 const guests: string[] = [
     'Bill Gates', 
     'Elon Musk', 

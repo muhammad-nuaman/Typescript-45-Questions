@@ -1,10 +1,14 @@
 "use strict";
 /*
 <<<< Task No: 24 >>>>
-More Conditional Tests: You don’t have to limit the number
+
+# More Conditional Tests:
+
+> You don’t have to limit the number
 of tests you create to 10. If you want to try more comparisons,
 write more tests. Have at least one True and one False result for
 each of the following:
+
 */
 Object.defineProperty(exports, "__esModule", { value: true });
 const person = {
@@ -29,14 +33,14 @@ console.log(person.name === 'Hussain');
 console.log(`\nPerson Name (${person.name}) is hussain`);
 console.log(person.name === 'hussain');
 // Greater than Age
-console.log(`\nPerson Age (${person.age}) is Greater than 30`);
-console.log(person.age > 30);
+console.log(`\nPerson Age (${person.age}) is Greater than 25`);
+console.log(person.age > 25);
 // Greater than or equal Age 
 console.log(`\nPerson Age (${person.age}) is Greater than or equal 25`);
 console.log(person.age >= 25);
 // Less than Age
-console.log(`\nPerson Age (${person.age}) is Less than 30`);
-console.log(person.age < 30);
+console.log(`\nPerson Age (${person.age}) is Less than 25`);
+console.log(person.age < 25);
 // Less than or equal Age 
 console.log(`\nPerson Age (${person.age}) is Less than or equal 25`);
 console.log(person.age <= 25);
