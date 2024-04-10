@@ -1,16 +1,20 @@
 "use strict";
 /*
 <<<< Task No: 28 >>>>
-Stages of Life: Write an if-else chain that determines
-a person’s stage of life.
-Set a value for the variable age, and then:
+
+# Stages of Life:
+
+> Write an if-else chain that determines a person’s stage of life.
+
+> Set a value for the variable age, and then:
+
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Provide Random Value between 1 to 70
-let random_age = Math.floor(Math.random() * 70 + 1);
-// Provide Random Value between 0 to 5
+// Random Value between 0 to 5
 let random_name = Math.floor(Math.random() * 6);
-// Multiple Persons 
+// Random Value between 1 to 70
+let random_age = Math.floor(Math.random() * 70 + 1);
+// Multiple Persons Name 
 const persons = [
     "Salman",
     "Ali",
@@ -19,33 +23,30 @@ const persons = [
     "Hassan",
     "Zaid"
 ];
-// Person Age
-let person_age = random_age;
-// Person Name
+// Define Person Name
 let person_name = persons[random_name];
-// About Person
+// Define Person Age
+let person_age = random_age;
+// Print Person Name and Age
 console.log(`${person_name} age is ${person_age}`);
-// 1. Baby
-if (person_age < 2) {
-    console.dir(`He's a baby`);
-}
-// 2. Toddler
-else if (person_age >= 2 && person_age < 4) {
-    console.dir(`He's a toddler`);
-}
-// 3. Kid
-else if (person_age >= 4 && person_age < 13) {
-    console.dir(`He's a kid`);
-}
-// 4. Teenager
-else if (person_age >= 13 && person_age < 20) {
-    console.dir(`He's a teenager`);
-}
-// 5. Adult
-else if (person_age >= 20 && person_age < 65) {
-    console.dir(`He's Adult`);
-}
-// 6. Elder
-else if (person_age >= 65) {
-    console.dir(`He's Elder`);
-}
+// Define Life Stages
+const life_stage = {
+    baby: person_age < 2,
+    toddler: person_age >= 2 && person_age < 4,
+    kid: person_age >= 4 && person_age < 13,
+    teenager: person_age >= 13 && person_age < 20,
+    adult: person_age >= 20 && person_age < 65,
+    elder: person_age >= 65
+};
+if (life_stage.baby)
+    console.dir(`He's a baby`); // Baby
+else if (life_stage.toddler)
+    console.dir(`He's a toddler`); // Toddler  
+else if (life_stage.kid)
+    console.dir(`He's a kid`); // Kid
+else if (life_stage.teenager)
+    console.dir(`He's a teenager`); // Teenager
+else if (life_stage.adult)
+    console.dir(`He's an Adult`); // Adult
+else if (life_stage.elder)
+    console.dir(`He's an Elder`); // Elder

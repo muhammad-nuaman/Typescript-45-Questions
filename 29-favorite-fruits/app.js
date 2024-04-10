@@ -9,7 +9,7 @@ that check for certain fruits in your array.
 Object.defineProperty(exports, "__esModule", { value: true });
 // Favorite Fruits
 const favoriteFruits = ["Apple", "Banana", "Mango"];
-const fruits = [
+const fruitBasket = [
     "Banana",
     "Pineapple",
     "Apple",
@@ -17,8 +17,8 @@ const fruits = [
     "Mango"
 ];
 //  Check Favroite Fruits
-fruits.forEach(fruit => {
+fruitBasket.forEach(fruit => {
     if (favoriteFruits.includes(fruit)) {
-        console.log(`You really like ${fruit}`);
+        console.log(`You really like ${fruit}!`);
     }
 });

@@ -8,7 +8,8 @@ that check for certain fruits in your array.
 
 // Favorite Fruits
 const favoriteFruits: string[] = ["Apple", "Banana", "Mango"];
-const fruits: string[] = [
+
+const fruitBasket: string[] = [
     "Banana",
     "Pineapple",
     "Apple",
@@ -19,6 +20,8 @@ const fruits: string[] = [
 
 
 //  Check Favroite Fruits
-fruits.forEach(fruit => {
-    if (favoriteFruits.includes(fruit)) {console.log(`You really like ${fruit}`)}
-  })
+fruitBasket.forEach(fruit => {
+    if (favoriteFruits.includes(fruit)) {
+        console.log(`You really like ${fruit}!`)
+    }
+})
