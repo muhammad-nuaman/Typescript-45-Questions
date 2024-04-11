@@ -1,19 +1,23 @@
 /*
 <<<< Task No: 34 >>>>
-Pizzas: 
-Think of at least three kinds of your favorite pizza. 
+
+# Pizzas: 
+
+> Think of at least three kinds of your favorite pizza. 
 Store these pizza names in a array, and then use a for loop to 
 print the name of each pizza.
+
 */
 
-// Pizzas
+// Define Pizzas
 const pizzas: string[] = [
     "Margherita",
     "Pepperoni",
     "Vegetarian",
     "Hawaiian"
 ];
-// Opinions About Pizzas
+
+// Define Opinions About Pizzas
 const opinions: string[] = [
     'pizza because of its simplicity and the fresh taste of basil and tomatoes.',
 
@@ -32,4 +36,4 @@ for (let i = 0; i < pizzas.length; i++) console.log(`${pizzas[i]} ${opinions[i]}
 // pizzas.forEach((pizza, index) => console.log(`${pizza} ${opinions[index]}\n`));
 
 // Print Final statement
-console.dir("> I really like pizza!");
+console.dir("I really like pizza!");

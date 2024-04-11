@@ -1,20 +1,23 @@
 "use strict";
 /*
 <<<< Task No: 34 >>>>
-Pizzas:
-Think of at least three kinds of your favorite pizza.
+
+# Pizzas:
+
+> Think of at least three kinds of your favorite pizza.
 Store these pizza names in a array, and then use a for loop to
 print the name of each pizza.
+
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Pizzas
+// Define Pizzas
 const pizzas = [
     "Margherita",
     "Pepperoni",
     "Vegetarian",
     "Hawaiian"
 ];
-// Opinions About Pizzas
+// Define Opinions About Pizzas
 const opinions = [
     'pizza because of its simplicity and the fresh taste of basil and tomatoes.',
     'pizza is my favorite due to its savory pepperoni slices and gooey cheese combination.',
@@ -27,4 +30,4 @@ for (let i = 0; i < pizzas.length; i++)
 // Print Opinions (Second Way)
 // pizzas.forEach((pizza, index) => console.log(`${pizza} ${opinions[index]}\n`));
 // Print Final statement
-console.dir("> I really like pizza!");
+console.dir("I really like pizza!");

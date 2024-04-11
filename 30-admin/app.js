@@ -1,13 +1,17 @@
 "use strict";
 /*
 <<<< Task No: 30 >>>>
-Hello Admin: Make a array of five or more usernames,
-including the name 'admin'. Imagine you are writing code that will print a greeting
+
+# Hello Admin:
+
+> Make a array of five or more usernames, including the name 'admin'.
+Imagine you are writing code that will print a greeting
 to each user after they log in to a website.
 Loop through the array, and print a greeting to each user:
+
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-// Login Status
+// Generate Random Login Status
 const status = () => [false, true][Math.floor(Math.random() * 2)];
 // Users
 const users = [
@@ -30,11 +34,15 @@ users.forEach((user) => {
         }
     }
 });
-// /*
-// <<<< Task No: 31 >>>>
-// No Users: 
-// Add an if test to Exercise 30 to make sure the list of users is not empty.
-//  */
+/*
+
+<<<< Task No: 31 >>>>
+
+# No Users:
+
+> Add an if test to Exercise 30 to make sure the list of users is not empty.
+
+*/
 // Empty Array
 const loginUsers = [];
 // Push Login Users

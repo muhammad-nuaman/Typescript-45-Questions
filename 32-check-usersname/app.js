@@ -1,11 +1,15 @@
 "use strict";
 /*
 <<<< Task No: 32 >>>>
-Checking Usernames:
-Do the following to create a program that simulates
+
+# Checking Usernames:
+
+> Do the following to create a program that simulates
 how websites ensure that everyone has a unique username.
+
 */
 Object.defineProperty(exports, "__esModule", { value: true });
+// Define Current Users
 const currentUsers = [
     "Muhammad",
     "Fatima",
@@ -18,6 +22,7 @@ const currentUsers = [
     "Omar",
     "Amina"
 ];
+// Define New Users
 const newUsers = [
     "Hassan",
     "Zainab",
@@ -27,6 +32,7 @@ const newUsers = [
     "Yusuf",
     "Abdullah",
 ];
+// Checking: for newUsers is available or Not
 newUsers.forEach((name) => {
     if (currentUsers.includes(name))
         console.log(`Sorry! ${name} is already used`);

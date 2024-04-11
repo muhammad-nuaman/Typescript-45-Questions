@@ -1,8 +1,10 @@
 "use strict";
 /*
 <<<<< Task No 35>>>>>>
-Animals:
-Think of at least three different animals that have a common
+
+# Animals:
+
+> Think of at least three different animals that have a common
 characteristic.
 Store the names of these animals in a list, and then use a for
 loop to print out the name of each animal.
@@ -26,14 +28,10 @@ const characteristic = [
 // Print Animals Names
 animals.forEach((animal, index) => console.log((++index), animal));
 console.log(''); // line space
-// Print Animals characteristic
-for (let index = 0; index < animals.length; index++) {
+// Print Animals Characteristics
+characteristic.forEach((char, index) => {
     console.dir(animals[index]);
-    console.log(characteristic[index], '\n');
-}
-// characteristic.forEach((char, index) => {
-//     console.dir(animals[index]);
-//     console.log(char, '\n')
-// });
+    console.log(char, '\n');
+});
 // Print Message
 console.dir('These animals are great pets');

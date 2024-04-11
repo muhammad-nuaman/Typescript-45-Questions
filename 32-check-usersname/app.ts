@@ -1,10 +1,14 @@
 /*
 <<<< Task No: 32 >>>>
-Checking Usernames: 
-Do the following to create a program that simulates 
+
+# Checking Usernames: 
+
+> Do the following to create a program that simulates 
 how websites ensure that everyone has a unique username.
+
 */
 
+// Define Current Users
 const currentUsers: string[] = [
     "Muhammad",
     "Fatima",
@@ -18,6 +22,7 @@ const currentUsers: string[] = [
     "Amina"
 ];
 
+// Define New Users
 const newUsers: string[] = [
     "Hassan",
     "Zainab",
@@ -28,6 +33,8 @@ const newUsers: string[] = [
     "Abdullah",
 ];
 
+
+// Checking: for newUsers is available or Not
 newUsers.forEach((name) => {
     if (currentUsers.includes(name)) console.log(`Sorry! ${name} is already used`);
     else console.log(`${name} is available`);
