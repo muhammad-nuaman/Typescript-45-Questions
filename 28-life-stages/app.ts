@@ -39,18 +39,19 @@ console.log(`${person_name} age is ${person_age}`);
 
 // Define Life Stages
 const life_stage: {[key: string]: boolean} = {
-    baby: person_age < 2, 
-    toddler: person_age >= 2 && person_age < 4,
-    kid: person_age >= 4 && person_age < 13,
+    baby:     person_age < 2, 
+    toddler:  person_age >= 2 && person_age < 4,
+    kid:      person_age >= 4 && person_age < 13,
     teenager: person_age >= 13 && person_age < 20,
-    adult: person_age >= 20 && person_age < 65,
-    elder: person_age >= 65
+    adult:    person_age >= 20 && person_age < 65,
+    elder:    person_age >= 65
 }
 
-if (life_stage.baby) console.dir(`He's a baby`)                 // Baby
-else if (life_stage.toddler) console.dir(`He's a toddler`)      // Toddler  
-else if (life_stage.kid) console.dir(`He's a kid`)              // Kid
-else if (life_stage.teenager) console.dir(`He's a teenager`)    // Teenager
-else if (life_stage.adult) console.dir(`He's an Adult`)         // Adult
-else if (life_stage.elder) console.dir(`He's an Elder`)         // Elder
+// Check and Print Life Stage
+if (life_stage.baby)          console.dir(`He's a baby`)                // Baby
+else if (life_stage.toddler)  console.dir(`He's a toddler`)             // Toddler  
+else if (life_stage.kid)      console.dir(`He's a kid`)                 // Kid
+else if (life_stage.teenager) console.dir(`He's a teenager`)            // Teenager
+else if (life_stage.adult)    console.dir(`He's an Adult`)              // Adult
+else if (life_stage.elder)    console.dir(`He's an Elder`)              // Elder
 

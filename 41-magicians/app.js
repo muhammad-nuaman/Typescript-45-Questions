@@ -15,7 +15,7 @@ const magicians = [
     'Albus Dumbledore',
     'Harry Potter',
     'Ronald Weasley',
-    'Hermione Granger',
+    'Hermione Granger'
 ];
 // Define Function
 function show_magicians(magicians) {

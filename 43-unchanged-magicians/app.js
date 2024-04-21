@@ -17,7 +17,7 @@ const magicians = [
     "Albus Dumbledore",
     "Harry Potter",
     "Ronald Weasley",
-    "Hermione Granger",
+    "Hermione Granger"
 ];
 // Define Function: Print Magicians Name
 function show_magicians(magicians) {
@@ -25,17 +25,18 @@ function show_magicians(magicians) {
 }
 // Define Function: Make Great Magicians Name
 function make_great(magicians) {
-    magicians.forEach((magician, index, magicians) => {
-        magicians[index] = `The Great ${magician}`;
+    const greatMagicians = [];
+    magicians.forEach((magician) => {
+        greatMagicians.push(`The Great ${magician}`);
     });
-    return magicians;
+    return greatMagicians;
 }
 // Sepearte The Great Magicians Name
-const theGreatMagicians = make_great([...magicians]);
+const theGreatMagicians = make_great(magicians);
 // Print The Magicians Name
 console.dir(`Magicians:`);
 show_magicians(magicians);
 console.log('=================');
 // Print The Great Magicians Name
-console.dir(`The Great Magicians: `);
+console.dir(`The Great Magicians:`);
 show_magicians(theGreatMagicians);

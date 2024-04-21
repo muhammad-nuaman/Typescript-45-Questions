@@ -38,6 +38,7 @@ const life_stage = {
     adult: person_age >= 20 && person_age < 65,
     elder: person_age >= 65
 };
+// Check and Print Life Stage
 if (life_stage.baby)
     console.dir(`He's a baby`); // Baby
 else if (life_stage.toddler)

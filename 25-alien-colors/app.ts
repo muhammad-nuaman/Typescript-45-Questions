@@ -11,7 +11,7 @@ Create a variable called alien_color and assign it a value of
 // Multiple Colors
 const colors: string[] = ['green', 'yellow', 'red'];
 // Random Indexing
-const random: number = Math.floor(Math.random() * 3);
+const random: number = Math.floor(Math.random() * colors.length);
 // Random Choice
 const alien_color: string = colors[random]; 
 

@@ -22,6 +22,6 @@ const fruitBasket: string[] = [
 //  Check Favroite Fruits
 fruitBasket.forEach(fruit => {
     if (favoriteFruits.includes(fruit)) {
-        console.log(`You really like ${fruit}!`)
+        console.log(`I really like ${fruit}!`)
     }
 })

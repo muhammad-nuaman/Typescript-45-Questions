@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Multiple Colors
 const colors = ['green', 'yellow', 'red'];
 // Random Indexing
-const random = Math.floor(Math.random() * 3);
+const random = Math.floor(Math.random() * colors.length);
 // Random Choice
 const alien_color = colors[random];
 // First Program

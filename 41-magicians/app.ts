@@ -14,7 +14,7 @@ const magicians: string[] = [
     'Albus Dumbledore',
     'Harry Potter',
     'Ronald Weasley',
-    'Hermione Granger',
+    'Hermione Granger'
 ];
 
 // Define Function

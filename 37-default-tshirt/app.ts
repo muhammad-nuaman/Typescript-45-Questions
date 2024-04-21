@@ -10,12 +10,12 @@ shirt with the default message, and a shirt of any size with a different message
 */
 
 // Define Shirt Sizes
-type sizes = 'Small' | 'Medium' | 'Large';
+type Sizes = 'Small' | 'Medium' | 'Large';
 
 // Define Function
 function make_shirt(
     // Default Values
-    size: sizes = 'Large', 
+    size: Sizes = 'Large', 
     text: string = 'I Love Typescript'
 ) {
     // Print Message
